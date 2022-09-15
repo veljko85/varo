@@ -265,7 +265,7 @@ var createScene = function () {
   // camera.lowerBetaLimit = 0;
   camera.upperBetaLimit = 1.9;
 
-  //ENVIROMENT
+  // ENVIROMENT
   scene.environmentTexture = new BABYLON.CubeTexture(
     "enviorment/env.env",
     scene
@@ -699,7 +699,11 @@ var createScene = function () {
         scene.getMaterialByID("Wood-Velja")
         // scene.getMaterialByID("Wood-Velja.001")
       );
-
+      // scene.getMaterialByID("Wood-Velja").specularColor = new BABYLON.Color3(
+      //   0.01,
+      //   0.01,
+      //   0.01
+      // );
       //METAL PART TO HOLD WOOD POST
       let leftMetalPart = result.meshes[10];
       leftMetalPart.material = rootMat;
